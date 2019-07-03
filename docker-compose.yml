@@ -6,3 +6,6 @@ services:
     volumes:
       - ./about:/usr/src/about
     working_dir: /usr/src/about
+    ports:
+      - 3000:3000
+    command: npm run dev --fix
